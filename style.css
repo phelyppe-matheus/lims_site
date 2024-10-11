@@ -225,7 +225,7 @@ nav {
     inset: 0 0 auto auto;
     transform: translate(50%, 0);
 
-    background: url("/public/icons/Quote.svg");
+    background: url("public/icons/Quote.svg");
     background-size: contain;
 }
 
