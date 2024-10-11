@@ -108,7 +108,6 @@ nav {
     flex-direction: column;
 
     align-items: center;
-    overflow-x: hidden;
 }
 
 .container .news {
@@ -196,13 +195,10 @@ nav {
     font-weight: 900;
 }
 
-.container .testimony {
-    padding: 5rem 0;
-}
-
 .container .testimony .title {
     color: var(--colorprimary);
     text-transform: uppercase;
+    font-weight: 900;
 }
 
 .container .testimony .card {
@@ -230,6 +226,7 @@ nav {
     transform: translate(50%, 0);
 
     background: url("/public/icons/Quote.svg");
+    background-size: contain;
 }
 
 .container .testimony .card .avatar {
@@ -299,12 +296,16 @@ nav {
 }
 
 @media (max-width: 1250.0000000001px) {
+    .container {
+        padding: 4rem 1rem;
+        gap: 10rem;
+    }
+
     .container .news {
         grid-template-columns: 1fr auto 1fr;
         grid-template-rows: 1fr auto 1fr;
 
         width: auto;
-        margin: none;
     }
 
     /* .container .news .card, .container .news .card+*, .container .news .card.hero+.separationV {
@@ -405,6 +406,7 @@ nav {
         grid-template-rows: auto;
 
         width: auto;
+        padding: 0;
     }
 
     .container .news .card, .container .news .card+*, .container .news .card.hero+.separationV {
@@ -439,10 +441,12 @@ nav {
     .container .about {
         width: auto;
         padding: 1rem;
+        padding: 0;
     }
 
     .container .about .text {
-        padding: 0 1rem;
+        text-align: justify;
+        text-wrap: pretty;
     }
 
     .container .testimony .card {
@@ -458,10 +462,12 @@ nav {
     }
 
     .container .testimony .card::after {
-        transform: translate(70%, 25%) scale(0.5);
+        position: relative;
+        width: 1rem;
     }
 
     .container .testimony .card .nickname {
+        font-size: 1rem;
         transform: translate(0%, 50%);
     }
 
@@ -473,9 +479,13 @@ nav {
 
 @media (max-width: 650px) {
 
-    .container .testimony .title,
-    .container .testimony .card .nickname {
+    .container .about .title,
+    .container .testimony .title {
         font-size: 1.6rem;
+    }
+
+    .container .testimony .card .nickname {
+        font-size: 1rem;
     }
 
     .container .testimony .card .text {
