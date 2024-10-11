@@ -284,6 +284,20 @@ nav {
     height: 31px;
 }
 
+.footer .makertag {
+    text-align: end;
+    display: block;
+    color: white;
+}
+.footer .makertag br {
+    display: none;
+}
+
+.footer .makertag span {
+    margin-left: 1rem;
+    opacity: 0.8;
+}
+
 @media (max-width: 1250.0000000001px) {
     .container .news {
         grid-template-columns: 1fr auto 1fr;
@@ -341,6 +355,10 @@ nav {
 
     .container .testimony .card .avatar {
         height: 10rem;
+    }
+
+    .footer .makertag br {
+        display: block;
     }
 }
 
