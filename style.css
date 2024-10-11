@@ -108,6 +108,7 @@ nav {
     flex-direction: column;
 
     align-items: center;
+    padding: 4rem 1rem;
 }
 
 .container .news {
@@ -297,7 +298,6 @@ nav {
 
 @media (max-width: 1250.0000000001px) {
     .container {
-        padding: 4rem 1rem;
         gap: 10rem;
     }
 
