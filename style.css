@@ -38,9 +38,13 @@ h4 {
     font-size: 4.33rem;
 }
 
-body {
-    font-family: "Lexend", sans-serif;
+html, body {
     overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    font-family: "Lexend", sans-serif;
 }
 
 nav {
@@ -104,6 +108,7 @@ nav {
     flex-direction: column;
 
     align-items: center;
+    overflow-x: hidden;
 }
 
 .container .news {
@@ -449,8 +454,27 @@ nav {
 }
 
 @media (max-width: 650px) {
+
+    .container .testimony .title,
+    .container .testimony .card .nickname {
+        font-size: 1.6rem;
+    }
+
+    .container .testimony .card .text {
+        font-size: 1rem;
+    }
+
     .footer > *,
     .footer h2 {
         font-size: 0.6rem;
+    }
+
+    .footer .socialmedia {
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+
+    .footer .ifpilogo .ifpi {
+        width: clamp(50px, 50vw, 271px);
     }
 }
